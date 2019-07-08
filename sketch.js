@@ -328,17 +328,17 @@ function carechain() {
 }
 
 
-function mousePressed() {
+// function mousePressed() {
  	
- 	eventCounter++;
+//  	eventCounter++;
 
- 	if(eventCounter == 4){
- 		eventCounter = 0;
- 	}
+//  	if(eventCounter == 4){
+//  		eventCounter = 0;
+//  	}
 
-	print('Clicks ' + eventCounter);
+// 	print('Clicks ' + eventCounter);
 
-}
+//}
 
 function carechainScene1() {
 
