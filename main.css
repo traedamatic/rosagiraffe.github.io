@@ -1,13 +1,17 @@
 body {
-	background: url(assets/kachel_2.png) repeat;
+	background: url(assets/kachel_3.png) repeat;
 }
 
+@font-face {
+	font-family: "Tablet Gothic Regular";
+	src: url("assets/TabletGothicRegular.ttf");
+}
 
 .category {
-	font-family: "Helvetica";
-	font-size: 14px;
+	font-family: "Tablet Gothic Regular";
+	font-size: 16px;
 	color: white;
-	width: 120px;
+	width: 130px;
 	margin-top: 50px;
 	margin-left: 200px;
 	background: #ffd564;	
@@ -27,7 +31,9 @@ body {
 
 
 .text {
-	font-family: "TabletGothicRegular";
+	font-family: "Tablet Gothic Regular";
+	line-height: 145%;
+
 	font-size: 11;
 	background: white;	
 	border: white 25px solid;
