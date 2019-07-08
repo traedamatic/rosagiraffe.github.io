@@ -23,13 +23,23 @@ body {
 
 #container {
 	
-	/*width: 1024px;*/
-	width: 600px;
+	width: 1024px;
 	margin-left: auto;
     margin-right: auto;
     max-width: 28rem;
 }
 
+.h2 {
+	font-family: "Tablet Gothic Regular";
+	line-height: 125%;
+	font-size: 22;
+}
+
+.credits {
+	font-family: "Tablet Gothic Regular";
+	line-height: 125%;
+	text-align: right;
+}
 
 .text {
 	font-family: "Tablet Gothic Regular";
