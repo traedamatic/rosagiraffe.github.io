@@ -3,6 +3,22 @@ body {
 }
 
 
+.category {
+	font-family: "Helvetica";
+	font-size: 14px;
+	color: white;
+	width: 120px;
+	margin-top: 50px;
+	margin-left: 200px;
+	background: #ffd564;	
+	border-left: #ffd564 20px solid;
+	border-right: #ffd564 20px solid;
+	border-bottom: #ffd564 1px solid;	
+	border-top: #ffd564 1px solid;
+
+
+}
+
 #container {
 	
 	width: 1024px;
@@ -27,12 +43,3 @@ body {
 }
 
 
-.category {
-	margin-top: 50px;
-	margin-left: 200px;
-	/*background: red;	*/
-	border-left: red 5px solid;
-	border-right: red 5px solid;
-	border-top: red 1px solid;
-
-}
