@@ -15,8 +15,6 @@ body {
 	border-right: #ffd564 20px solid;
 	border-bottom: #ffd564 1px solid;	
 	border-top: #ffd564 1px solid;
-
-
 }
 
 #container {
@@ -29,6 +27,8 @@ body {
 
 
 .text {
+	font-family: "TabletGothicRegular";
+	font-size: 11;
 	background: white;	
 	border: white 25px solid;
 	margin: 0 1.6em 1.2em 0;
