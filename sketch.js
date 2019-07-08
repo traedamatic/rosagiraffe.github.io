@@ -30,7 +30,7 @@ var schieben3 = 1300;
 
 function preload() {
 img = loadImage("assets/kachel.png");
-img1 = loadImage("assets/headline.png");
+img1 = loadImage("assets/head_line.png");
 fonty = loadFont('assets/TabletGothicRegular.ttf');
 }
 
