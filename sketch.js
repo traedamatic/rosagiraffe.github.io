@@ -41,7 +41,7 @@ fonty = loadFont('assets/TabletGothicRegular.ttf');
 /////////////////////////////////////////////
 
 function setup() {
-	return;
+	// return;
 	canvas = createCanvas(1000, canvasLang);
 	canvas.parent('container')
 	frameRate(60);
@@ -62,11 +62,11 @@ function setup() {
 
 function draw() {
 
-	return;
+	// return;
 
 	background(255);
 
-	kacheln();
+	// kacheln();
 	haus();
 	arbeit();
 	carechain();
@@ -131,300 +131,300 @@ function kacheln(){
 	}
 }
 
-function arbeit() {
-	noStroke();
+// function arbeit() {
+// 	noStroke();
 
-	/////////////////////////////////////////////
-	// Arbeitszeit
+// 	/////////////////////////////////////////////
+// 	// Arbeitszeit
 
-	fill(255,200,0); //gelb
-	rect(width/4-rechteck/2, schieben1, rechteck, rechteck);
+// 	fill(255,200,0); //gelb
+// 	rect(width/4-rechteck/2, schieben1, rechteck, rechteck);
 
-	fill(255); //white
+// 	fill(255); //white
 
 	
-	// Animation Arbeitszeit
-	if (x > rechteck*(1/3)) {
-		rect(width/4-rechteck/2, schieben1, rechteck, x);
-		x = x - 0.3;
-	}	else{
-		rect(width/4-rechteck/2, schieben1, rechteck, rechteck*(1/3));
+// 	// Animation Arbeitszeit
+// 	if (x > rechteck*(1/3)) {
+// 		rect(width/4-rechteck/2, schieben1, rechteck, x);
+// 		x = x - 0.3;
+// 	}	else{
+// 		rect(width/4-rechteck/2, schieben1, rechteck, rechteck*(1/3));
 		
-		if (frameCount % 60 == 0 && timer1 > 0) { 
-    		timer1 --;
-  		}
-  		if (timer1 == 0){
-			x = rechteck;
-			timer1 = 4;
-		}
-	}
+// 		if (frameCount % 60 == 0 && timer1 > 0) { 
+//     		timer1 --;
+//   		}
+//   		if (timer1 == 0){
+// 			x = rechteck;
+// 			timer1 = 4;
+// 		}
+// 	}
 	
-	// Ende Arbeitszeit
-	/////////////////////////////////////////////
+// 	// Ende Arbeitszeit
+// 	/////////////////////////////////////////////
 	
 
-	/////////////////////////////////////////////
-	// Gehalt
-		fill(255,200,0); // GELB
-		rect(width/4*2-rechteck/2, schieben1, rechteck, rechteck);
-		fill(255); // WHITE
-	// Animation Arbeitszeit
+// 	/////////////////////////////////////////////
+// 	// Gehalt
+// 		fill(255,200,0); // GELB
+// 		rect(width/4*2-rechteck/2, schieben1, rechteck, rechteck);
+// 		fill(255); // WHITE
+// 	// Animation Arbeitszeit
 
-	if (y < rechteck*0.9) {
-		rect(width/4*2-rechteck/2, schieben1, rechteck, y);
-		y = y + 0.8;
-	} else {
-		rect(width/4*2-rechteck/2, schieben1, rechteck, rechteck*0.9);
+// 	if (y < rechteck*0.9) {
+// 		rect(width/4*2-rechteck/2, schieben1, rechteck, y);
+// 		y = y + 0.8;
+// 	} else {
+// 		rect(width/4*2-rechteck/2, schieben1, rechteck, rechteck*0.9);
 		
-		if (frameCount % 60 == 0 && timer2 > 0) { 
-    		timer2 --;
-  		}
-  		if (timer2 == 0){
-			y = 0;
-			timer2 = 7;
-		}
-	}
-	// Ende Gehalt
-	/////////////////////////////////////////////
+// 		if (frameCount % 60 == 0 && timer2 > 0) { 
+//     		timer2 --;
+//   		}
+//   		if (timer2 == 0){
+// 			y = 0;
+// 			timer2 = 7;
+// 		}
+// 	}
+// 	// Ende Gehalt
+// 	/////////////////////////////////////////////
 	
-	/////////////////////////////////////////////
-	// Eigentum
-		fill(255,200,0); // GELB
-		rect(width/4*3-rechteck/2, schieben1, rechteck, rechteck);
-		fill(255); // WHITE
+// 	/////////////////////////////////////////////
+// 	// Eigentum
+// 		fill(255,200,0); // GELB
+// 		rect(width/4*3-rechteck/2, schieben1, rechteck, rechteck);
+// 		fill(255); // WHITE
 	
-	// Animation Gehalt
-	if (z < rechteck*0.99) {
-		rect(width/4*3-rechteck/2, schieben1, rechteck, z);
-		z = z + 1.2;
-	} else {
-		rect(width/4*3-rechteck/2, schieben1, rechteck, rechteck*0.99);
+// 	// Animation Gehalt
+// 	if (z < rechteck*0.99) {
+// 		rect(width/4*3-rechteck/2, schieben1, rechteck, z);
+// 		z = z + 1.2;
+// 	} else {
+// 		rect(width/4*3-rechteck/2, schieben1, rechteck, rechteck*0.99);
 		
-		if (frameCount % 60 == 0 && timer3 > 0) { 
-    		timer3 --;
-  		}
-  		if (timer3 == 0){
-			z = 0;
-			timer3 = 7;
-		}
-	}
-	// Ende Eigentum
-	/////////////////////////////////////////////
-}
+// 		if (frameCount % 60 == 0 && timer3 > 0) { 
+//     		timer3 --;
+//   		}
+//   		if (timer3 == 0){
+// 			z = 0;
+// 			timer3 = 7;
+// 		}
+// 	}
+// 	// Ende Eigentum
+// 	/////////////////////////////////////////////
+// }
 
 
-function haus() {
-	//2. Im Haus und außer Haus
+// function haus() {
+// 	//2. Im Haus und außer Haus
 
-	var theColour = map(mouseX, width-420, 20, 0, 255);
-	var theColour2 = map(mouseX, 420,  width, 0, 255);
+// 	var theColour = map(mouseX, width-420, 20, 0, 255);
+// 	var theColour2 = map(mouseX, 420,  width, 0, 255);
 
-	fill(200);
-	noStroke();
-	// rect(0, 350, width, 350);
-	//2.
+// 	fill(200);
+// 	noStroke();
+// 	// rect(0, 350, width, 350);
+// 	//2.
 
-	stroke(0);
-	line(90, 500+(rechteck/2)+schieben2, width-90, 500+(rechteck/2)+schieben2);
-	noStroke();
+// 	stroke(0);
+// 	line(90, 500+(rechteck/2)+schieben2, width-90, 500+(rechteck/2)+schieben2);
+// 	noStroke();
 
-	//Haus
-	fill(255);
-	rect(width/2-(rechteck/2), 500+schieben2, rechteck, rechteck);
-	triangle(width/2-(rechteck/2), 500+schieben2, width/2-(rechteck/2)+rechteck/2, 450+schieben2, width/2-(rechteck/2)+rechteck, 500+schieben2);
+// 	//Haus
+// 	fill(255);
+// 	rect(width/2-(rechteck/2), 500+schieben2, rechteck, rechteck);
+// 	triangle(width/2-(rechteck/2), 500+schieben2, width/2-(rechteck/2)+rechteck/2, 450+schieben2, width/2-(rechteck/2)+rechteck, 500+schieben2);
 
-	//Frauen außer Haus
-	fill(255, 200, 0, theColour);
-	circle(200, 400+schieben2, 20);
-	circle(230, 430+schieben2, 20);
-	circle(300, 650+schieben2, 20);
-	circle(700, 420+schieben2, 20);
-	circle(720, 630+schieben2, 20);
-	circle(300, 560+schieben2, 20);
-	circle(840, 510+schieben2, 20);
-	circle(740, 520+schieben2, 20);
-	circle(890, 520+schieben2, 20);
-	circle(800, 560+schieben2, 20);
-	circle(720, 570+schieben2, 20);
-	circle(180, 580+schieben2, 20);
-	circle(270, 600+schieben2, 20);
-	circle(980, 400+schieben2, 20);
+// 	//Frauen außer Haus
+// 	fill(255, 200, 0, theColour);
+// 	circle(200, 400+schieben2, 20);
+// 	circle(230, 430+schieben2, 20);
+// 	circle(300, 650+schieben2, 20);
+// 	circle(700, 420+schieben2, 20);
+// 	circle(720, 630+schieben2, 20);
+// 	circle(300, 560+schieben2, 20);
+// 	circle(840, 510+schieben2, 20);
+// 	circle(740, 520+schieben2, 20);
+// 	circle(890, 520+schieben2, 20);
+// 	circle(800, 560+schieben2, 20);
+// 	circle(720, 570+schieben2, 20);
+// 	circle(180, 580+schieben2, 20);
+// 	circle(270, 600+schieben2, 20);
+// 	circle(980, 400+schieben2, 20);
 
-	//Frauen bleiben
-	fill(255, 200, 0)
-	circle(width/2-20, 530+schieben2, 20);
-	circle(220, 660+schieben2, 20);
-	circle(870, 500+schieben2, 20);
+// 	//Frauen bleiben
+// 	fill(255, 200, 0)
+// 	circle(width/2-20, 530+schieben2, 20);
+// 	circle(220, 660+schieben2, 20);
+// 	circle(870, 500+schieben2, 20);
 
-	//Frauen im Haus
-	fill(255, 200, 0, theColour2);
-	circle(width/2-40, 500+schieben2, 20);
-	circle(width/2-60, 560+schieben2, 20);
-	circle(width/2-50, 630+schieben2, 20);
-	circle(width/2-40, 580+schieben2, 20);
-	circle(width/2-30, 610+schieben2, 20);
-	circle(width/2-20, 560+schieben2, 20);
-	circle(width/2-10, 480+schieben2, 20);
-	circle(width/2, 500+schieben2, 20);
-	circle(width/2+10, 630+schieben2, 20);
-	circle(width/2+20, 590+schieben2, 20);
-	circle(width/2+30, 610+schieben2, 20);
-	circle(width/2+40, 530+schieben2, 20);
-	circle(width/2+50, 620+schieben2, 20);
-	circle(width/2+60, 580+schieben2, 20);
+// 	//Frauen im Haus
+// 	fill(255, 200, 0, theColour2);
+// 	circle(width/2-40, 500+schieben2, 20);
+// 	circle(width/2-60, 560+schieben2, 20);
+// 	circle(width/2-50, 630+schieben2, 20);
+// 	circle(width/2-40, 580+schieben2, 20);
+// 	circle(width/2-30, 610+schieben2, 20);
+// 	circle(width/2-20, 560+schieben2, 20);
+// 	circle(width/2-10, 480+schieben2, 20);
+// 	circle(width/2, 500+schieben2, 20);
+// 	circle(width/2+10, 630+schieben2, 20);
+// 	circle(width/2+20, 590+schieben2, 20);
+// 	circle(width/2+30, 610+schieben2, 20);
+// 	circle(width/2+40, 530+schieben2, 20);
+// 	circle(width/2+50, 620+schieben2, 20);
+// 	circle(width/2+60, 580+schieben2, 20);
 
-	// for (var c = 30; c < width-20 && c > 0; c = c + 40) {
-	//   for (var d = 515; d < 650 && d > 0; d = d + 40) {
-	// fill(40, 53, 131, theColour2);
-	// 	circle(c, d, 20);
-	// }
-	// }
+// 	// for (var c = 30; c < width-20 && c > 0; c = c + 40) {
+// 	//   for (var d = 515; d < 650 && d > 0; d = d + 40) {
+// 	// fill(40, 53, 131, theColour2);
+// 	// 	circle(c, d, 20);
+// 	// }
+// 	// }
 
-	//Frauen
-	// for (var a = 30; a < width-20 && a > 0; a = a + 40) {
-	//   for (var b = 515; b < 650 && b > 0; b = b + 40) {
-	// 	fill(255, 200, 0, theColour);
-	// 	circle(a, b, 20);
-	// }
-	// }
+// 	//Frauen
+// 	// for (var a = 30; a < width-20 && a > 0; a = a + 40) {
+// 	//   for (var b = 515; b < 650 && b > 0; b = b + 40) {
+// 	// 	fill(255, 200, 0, theColour);
+// 	// 	circle(a, b, 20);
+// 	// }
+// 	// }
 
-}
+// }
 
-function carechain() {
-	// 3. Häuschen die nur ein mal gemalt werden
-	fill(255);
-	noStroke();
+// function carechain() {
+// 	// 3. Häuschen die nur ein mal gemalt werden
+// 	fill(255);
+// 	noStroke();
 
-	rect(width/4+60, 900+schieben3, rechteck, rechteck); //1.
-	triangle(width/4+60, 900+schieben3, width/4+60+rechteck/2, 850+schieben3, width/4+60+rechteck, 900+schieben3);
+// 	rect(width/4+60, 900+schieben3, rechteck, rechteck); //1.
+// 	triangle(width/4+60, 900+schieben3, width/4+60+rechteck/2, 850+schieben3, width/4+60+rechteck, 900+schieben3);
 
-	rect(width/4+120+rechteck, 900+schieben3, rechteck, rechteck); //2. 
-	triangle(width/4+120+rechteck, 900+schieben3, width/4+120+rechteck+rechteck/2, 850+schieben3, width/4+120+rechteck+rechteck, 900+schieben3);
-	rect(width/4+120+rechteck, 900+schieben3, rechteck, rechteck); //2. 
+// 	rect(width/4+120+rechteck, 900+schieben3, rechteck, rechteck); //2. 
+// 	triangle(width/4+120+rechteck, 900+schieben3, width/4+120+rechteck+rechteck/2, 850+schieben3, width/4+120+rechteck+rechteck, 900+schieben3);
+// 	rect(width/4+120+rechteck, 900+schieben3, rechteck, rechteck); //2. 
 
-	rect(width/4+120+rechteck+60+rechteck, 900+schieben3, rechteck, rechteck); //3.
-	triangle(width/4+120+rechteck+60+rechteck, 900+schieben3, width/4+120+rechteck+60+rechteck+rechteck/2, 850+schieben3, width/4+120+rechteck+60+rechteck+rechteck, 900+schieben3);
+// 	rect(width/4+120+rechteck+60+rechteck, 900+schieben3, rechteck, rechteck); //3.
+// 	triangle(width/4+120+rechteck+60+rechteck, 900+schieben3, width/4+120+rechteck+60+rechteck+rechteck/2, 850+schieben3, width/4+120+rechteck+60+rechteck+rechteck, 900+schieben3);
 
-	// Linien
-	 // stroke(0);
-	 // strokeWeight(1);
-	 // line(250, 975, 350, 975);
-	 // line(460, 975, 560, 975);
-	 // line(670, 975, 770, 975);
+// 	// Linien
+// 	 // stroke(0);
+// 	 // strokeWeight(1);
+// 	 // line(250, 975, 350, 975);
+// 	 // line(460, 975, 560, 975);
+// 	 // line(670, 975, 770, 975);
 
-	// Wenn eventCounter = 0 zeichne Scene1
-	if(eventCounter == 0){
-		carechainScene1();
-	}
-	// Wenn eventCounter = 1 zeichne Scene1
-	if(eventCounter == 1){
-		carechainScene2();
-	}
-	// Wenn eventCounter = 2 zeichne Scene1
-	if(eventCounter == 2){
-		carechainScene3();
-	}
-	// Wenn eventCounter = 3 zeichne Scene1
-	if(eventCounter == 3){
-		carechainScene4();
-	}
-}
+// 	// Wenn eventCounter = 0 zeichne Scene1
+// 	if(eventCounter == 0){
+// 		carechainScene1();
+// 	}
+// 	// Wenn eventCounter = 1 zeichne Scene1
+// 	if(eventCounter == 1){
+// 		carechainScene2();
+// 	}
+// 	// Wenn eventCounter = 2 zeichne Scene1
+// 	if(eventCounter == 2){
+// 		carechainScene3();
+// 	}
+// 	// Wenn eventCounter = 3 zeichne Scene1
+// 	if(eventCounter == 3){
+// 		carechainScene4();
+// 	}
+// }
 
 
-// function mousePressed() {
+// // function mousePressed() {
  	
-//  	eventCounter++;
+// //  	eventCounter++;
 
-//  	if(eventCounter == 4){
-//  		eventCounter = 0;
-//  	}
+// //  	if(eventCounter == 4){
+// //  		eventCounter = 0;
+// //  	}
 
-// 	print('Clicks ' + eventCounter);
+// // 	print('Clicks ' + eventCounter);
 
-//}
+// //}
 
-function carechainScene1() {
+// function carechainScene1() {
 
-	// 2. Kreis im 1. Häuschen
-	stroke(255,200,0);
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2, 975+schieben3, rechteck/2);
+// 	// 2. Kreis im 1. Häuschen
+// 	stroke(255,200,0);
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2, 975+schieben3, rechteck/2);
 
-	// 2. im 2. Häuschen
-	stroke(255,200,0);
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2+60+rechteck, 975+schieben3, rechteck/2);
+// 	// 2. im 2. Häuschen
+// 	stroke(255,200,0);
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2+60+rechteck, 975+schieben3, rechteck/2);
 
-	// 2. im 3. Häuschen
-	stroke(255,200,0);
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975+schieben3, rechteck/2);
-}
+// 	// 2. im 3. Häuschen
+// 	stroke(255,200,0);
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975+schieben3, rechteck/2);
+// }
 
-function carechainScene2() {
+// function carechainScene2() {
 
-	// Kreis im 1. Häuschen
-	// stroke(255,200,0);
-	// noFill();
- // 	strokeWeight(2);
-	// circle(width/4+60+rechteck/2, 975, rechteck/2);
+// 	// Kreis im 1. Häuschen
+// 	// stroke(255,200,0);
+// 	// noFill();
+//  // 	strokeWeight(2);
+// 	// circle(width/4+60+rechteck/2, 975, rechteck/2);
 
-	// Kreis im 2. Häuschen
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2+60+rechteck, 975+schieben3, rechteck/2);
+// 	// Kreis im 2. Häuschen
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2+60+rechteck, 975+schieben3, rechteck/2);
 
-	// 2. im 3. Häuschen
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975+schieben3, rechteck/2);
+// 	// 2. im 3. Häuschen
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975+schieben3, rechteck/2);
 
-	fill(255, 200, 0);
-	circle(width/4-rechteck/2, 975+schieben3, rechteck/2);
-}
+// 	fill(255, 200, 0);
+// 	circle(width/4-rechteck/2, 975+schieben3, rechteck/2);
+// }
 
-function carechainScene3() {
+// function carechainScene3() {
 
-	// 2. Kreis im 1. Häuschen
-	stroke(255,200,0);
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2, 975+schieben3, rechteck/2);
+// 	// 2. Kreis im 1. Häuschen
+// 	stroke(255,200,0);
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2, 975+schieben3, rechteck/2);
 
-	// 2. im 2. Häuschen
-	// stroke(255,200,0);
-	// noFill();
- // 	strokeWeight(2);
- // 	circle(width/4+60+rechteck/2+60+rechteck, 975, rechteck/2);
+// 	// 2. im 2. Häuschen
+// 	// stroke(255,200,0);
+// 	// noFill();
+//  // 	strokeWeight(2);
+//  // 	circle(width/4+60+rechteck/2+60+rechteck, 975, rechteck/2);
 
-	// 2. im 3. Häuschen
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975+schieben3, rechteck/2);
+// 	// 2. im 3. Häuschen
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975+schieben3, rechteck/2);
 
-	fill(255, 200, 0);
-	circle(width/4-rechteck/2, 975+schieben3, rechteck/2);
-}
+// 	fill(255, 200, 0);
+// 	circle(width/4-rechteck/2, 975+schieben3, rechteck/2);
+// }
 
-function carechainScene4() {
+// function carechainScene4() {
 
-	// 2. Kreis im 1. Häuschen
-	stroke(255,200,0);
-	fill(255, 200, 0);
-	circle(width/4+60+rechteck/2, 975+schieben3, rechteck/2);
+// 	// 2. Kreis im 1. Häuschen
+// 	stroke(255,200,0);
+// 	fill(255, 200, 0);
+// 	circle(width/4+60+rechteck/2, 975+schieben3, rechteck/2);
 
-	// 2. im 2. Häuschen
-	fill(255, 200, 0);
- 	circle(width/4+60+rechteck/2+60+rechteck, 975+schieben3, rechteck/2);
+// 	// 2. im 2. Häuschen
+// 	fill(255, 200, 0);
+//  	circle(width/4+60+rechteck/2+60+rechteck, 975+schieben3, rechteck/2);
 
-	// 2. im 3. Häuschen
-	// stroke(255,200,0);
-	// noFill();
- // 	strokeWeight(2);
- // 	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975, rechteck/2);
- textSize(34);
- fill(0);
- //text("?", width/4+60+rechteck/2+60+rechteck+60+rechteck, 985);
+// 	// 2. im 3. Häuschen
+// 	// stroke(255,200,0);
+// 	// noFill();
+//  // 	strokeWeight(2);
+//  // 	circle(width/4+60+rechteck/2+60+rechteck+60+rechteck, 975, rechteck/2);
+//  textSize(34);
+//  fill(0);
+//  //text("?", width/4+60+rechteck/2+60+rechteck+60+rechteck, 985);
 
-	fill(255, 200, 0);
-	circle(width/4-rechteck/2, 975+schieben3, rechteck/2);
-}
+// 	fill(255, 200, 0);
+// 	circle(width/4-rechteck/2, 975+schieben3, rechteck/2);
+// }
 
 
 function vektor() {
