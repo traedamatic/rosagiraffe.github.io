@@ -1,3 +1,9 @@
 body {
-	background: url('assets/kachel.png') repeat;
+
+}
+
+#container {
+	
+	width: 1024px;
+	margin: auto;
 }
