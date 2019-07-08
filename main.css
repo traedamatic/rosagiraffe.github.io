@@ -2,16 +2,37 @@ body {
 	background: url(assets/kachel_2.png) repeat;
 }
 
+
 #container {
 	
 	width: 1024px;
-	margin: auto;
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 28rem;
 }
 
+
 .text {
-	background: green;	
+	background: white;	
+	border: white 25px solid;
+	margin: 0 1.6em 1.2em 0;
+	vertical-align: right;
+
+
 }
 
 .headline {
-	margin-top: 400px;
+	margin-top: 100px;
+	margin-left: 200px;
+}
+
+
+.category {
+	margin-top: 50px;
+	margin-left: 200px;
+	/*background: red;	*/
+	border-left: red 5px solid;
+	border-right: red 5px solid;
+	border-top: red 1px solid;
+
 }
