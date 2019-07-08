@@ -1,5 +1,6 @@
 body {
 	background: url(assets/kachel_3.png) repeat;
+	/*background-color: red;*/
 }
 
 @font-face {
@@ -7,17 +8,21 @@ body {
 	src: url("assets/TabletGothicRegular.ttf");
 }
 
-#frau_1{
+/*#frau_1{
 	float: left;
 	margin: 0 1.6em 1.2em 0;
-}
+}*/
 
 .img-frau_1{
+	/*clear: margin-left, margin-right, max-width;*/
+	float: left;
 	width: 300px;
 	height: 421px;
 	background-image: url(assets/frau_1.jpg);
 	background-size: contain;
-	margin: 0 1.6em 1.2em 0;
+
+	margin-top: 800px;
+	margin-left: 300px;
 }
 
 .category {
@@ -34,9 +39,9 @@ body {
 
 #container {
 	
-	width: 1024px;
-	margin-left: auto;
-    margin-right: auto;
+	width: 600px;
+	margin-left: 15rem;
+    margin-right: 9rem;
     max-width: 28rem;
 }
 
