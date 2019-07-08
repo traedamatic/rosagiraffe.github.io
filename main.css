@@ -40,8 +40,9 @@ body {
 #container {
 	
 	width: 1024px;
-	margin-left: 15rem;
+	margin-left: 19rem;
     margin-right: 9rem;
+    margin-top: 5rem;
     max-width: 28rem;
 }
 
