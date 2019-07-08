@@ -1,9 +1,17 @@
 body {
-
+	/*background: url(assets/kachel.png) repeat;*/
 }
 
 #container {
 	
-	width: 1000px;
+	width: 1024px;
 	margin: auto;
+}
+
+.text {
+	background: green;	
+}
+
+.headline {
+	margin-top: 400px;
 }

@@ -41,6 +41,7 @@ fonty = loadFont('assets/TabletGothicRegular.ttf');
 /////////////////////////////////////////////
 
 function setup() {
+	return;
 	canvas = createCanvas(1000, canvasLang);
 	canvas.parent('container')
 	frameRate(60);
@@ -60,6 +61,8 @@ function setup() {
 /////////////////////////////////////////////
 
 function draw() {
+
+	return;
 
 	background(255);
 
