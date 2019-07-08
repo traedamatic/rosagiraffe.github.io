@@ -7,6 +7,19 @@ body {
 	src: url("assets/TabletGothicRegular.ttf");
 }
 
+#frau_1{
+	float: left;
+	margin: 0 1.6em 1.2em 0;
+}
+
+.img-frau_1{
+	width: 300px;
+	height: 421px;
+	background-image: url(assets/frau_1.jpg);
+	background-size: contain;
+	margin: 0 1.6em 1.2em 0;
+}
+
 .category {
 	font-family: "Tablet Gothic Regular";
 	font-size: 16px;
@@ -15,11 +28,9 @@ body {
 	margin-top: 50px;
 	margin-left: 200px;
 	background: #ffd564;	
-	border-left: #ffd564 20px solid;
-	border-right: #ffd564 20px solid;
-	border-bottom: #ffd564 1px solid;	
-	border-top: #ffd564 1px solid;
-}
+	border: #ffd564 1px solid;
+	border-left: #ffd564 15px solid;
+	border-right: #ffd564 15px solid;}
 
 #container {
 	
@@ -44,12 +55,13 @@ body {
 .text {
 	font-family: "Tablet Gothic Regular";
 	line-height: 145%;
-
 	font-size: 11;
 	background: white;	
-	border: white 25px solid;
+	border: white 2px solid;
+	border-left: white 25px solid;
+	border-right: white 25px solid;
 	margin: 0 1.6em 1.2em 0;
-	vertical-align: right;
+	/*vertical-align: right;*/
 
 
 }
