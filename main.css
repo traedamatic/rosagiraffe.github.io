@@ -8,7 +8,7 @@ body {
 }
 
 .verlauf{
-background-image: linear-gradient(to bottom, transparent, white 100%);
+background-image: linear-gradient(to bottom, rgba(255,255,255,0.1), rgba(255,255,255,0.9), rgba(255,255,255,1));
 }
 
 .headline {
@@ -20,8 +20,29 @@ background-image: linear-gradient(to bottom, transparent, white 100%);
 .img-frau_1{
 	float: left;
 	width: 300px;
-	height: 421px;
+	height: 215px;
 	background-image: url(assets/frau_1.jpg);
+	background-size: contain;
+	margin: 0 1.6em 2.2em 0;
+	margin-left: -200px;
+}
+
+
+.img-frau_2{
+	float: left;
+	width: 300px;
+	height: 215px;
+	background-image: url(assets/frau_2.jpg);
+	background-size: contain;
+	margin: 0 1.6em 2.2em 0;
+	margin-left: -200px;
+}
+
+.img-frau_3{
+	float: left;
+	width: 300px;
+	height: 215px;
+	background-image: url(assets/frau_3.jpg);
 	background-size: contain;
 	margin: 0 1.6em 2.2em 0;
 	margin-left: -200px;
@@ -30,8 +51,9 @@ background-image: linear-gradient(to bottom, transparent, white 100%);
 
 figcaption {
 	text-align: left;
-	margin-top: 431px;
+	margin-top: 216px;
 }
+
 
 
 #container {
@@ -87,7 +109,7 @@ figcaption {
 	border: .verlauf 2px solid;
 	border-left: .verlauf 25px solid;
 	border-right: verlauf 25px solid;
-	margin-top: -3000px;
+	margin-top: -1800px;
 	margin-bottom: 0px;
     max-width: 48rem;
    	margin-left: 150px;
