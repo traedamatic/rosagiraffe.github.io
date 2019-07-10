@@ -1,5 +1,5 @@
 body {
-	background: url(assets/kachel_3.png) repeat;
+	background: url(assets/kachel_3_1.png) repeat;
 }
 
 @font-face {
@@ -7,6 +7,9 @@ body {
 	src: url("assets/TabletGothicRegular.ttf");
 }
 
+.verlauf{
+background-image: linear-gradient(to bottom, transparent, white 100%);
+}
 
 .headline {
 	margin-top: 100px;
@@ -39,6 +42,14 @@ figcaption {
     max-width: 28rem;
 }
 
+#container2 {
+	width: 1024px;
+	/*margin-left: 6rem;*/
+    /*margin-right: 5rem;*/
+    /*margin-top: 5rem;*/
+    /*max-width: 28rem;*/
+}
+
 
 .category {
 	font-family: "Tablet Gothic Regular";
@@ -61,7 +72,6 @@ figcaption {
 	font-family: "Tablet Gothic Regular";
 	line-height: 155%;
 	font-size: 16px;
-	
 	background: white;	
 	border: white 2px solid;
 	border-left: white 25px solid;
@@ -69,11 +79,34 @@ figcaption {
 	margin: 0 1.6em 1.2em 0;
 }
 
+.text2 {
+	font-family: "Tablet Gothic Regular";
+	line-height: 155%;
+	font-size: 13px;
+	background: .verlauf;	
+	border: .verlauf 2px solid;
+	border-left: .verlauf 25px solid;
+	border-right: verlauf 25px solid;
+	margin-top: -3000px;
+	margin-bottom: 0px;
+    max-width: 48rem;
+   	margin-left: 150px;
+
+
+	/*margin: 0 1.6em 1.2em 0;*/
+}
+
 
 .h2 {
 	font-family: "Tablet Gothic Regular";
 	line-height: 125%;
 	font-size: 22;
+}
+
+underline {
+	border-bottom: 5px solid #ffd564;
+  	display: inline-block;
+  	line-height: 0.45;
 }
 
 
