@@ -20,9 +20,18 @@ body {
 	height: 421px;
 	background-image: url(assets/frau_1.jpg);
 	background-size: contain;
+	/*top: 0px;*/
+	margin: 0 1.6em 2.2em 0;
+	/*margin-top: 0px;*/
+	margin-left: -200px;
+}
 
-	margin-top: 800px;
-	margin-left: 300px;
+figcaption {
+	/*padding: 10px;*/
+	text-align: left;
+		/*margin: 0 1.6em 2.2em 0;*/
+
+	margin-top: 431px;
 }
 
 .category {
@@ -37,14 +46,7 @@ body {
 	border-left: #ffd564 15px solid;
 	border-right: #ffd564 15px solid;}
 
-#container {
-	
-	width: 1024px;
-	margin-left: 19rem;
-    margin-right: 9rem;
-    margin-top: 5rem;
-    max-width: 28rem;
-}
+
 
 .h2 {
 	font-family: "Tablet Gothic Regular";
@@ -58,6 +60,16 @@ body {
 	text-align: right;
 }
 
+#container {
+	
+	width: 1024px;
+	margin-left: 19rem;
+    margin-right: 9rem;
+    margin-top: 5rem;
+    max-width: 28rem;
+	/*float: left;*/
+
+}
 .text {
 	font-family: "Tablet Gothic Regular";
 	line-height: 145%;
@@ -67,7 +79,9 @@ body {
 	border-left: white 25px solid;
 	border-right: white 25px solid;
 	margin: 0 1.6em 1.2em 0;
-	/*vertical-align: right;*/
+	vertical-align: left;
+		/*float: left;*/
+
 
 
 }
