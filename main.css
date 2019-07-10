@@ -84,9 +84,9 @@ figcaption {
 	margin-left: 200px;
 	
 	background: #ffd564;	
-	border: #ffd564 1px solid;
-	border-left: #ffd564 15px solid;
-	border-right: #ffd564 15px solid;
+	border: #ffd564 5px solid;
+	border-left: #ffd564 10px solid;
+	border-right: #ffd564 5px solid;
 }
 
 
@@ -99,6 +99,11 @@ figcaption {
 	border-left: white 25px solid;
 	border-right: white 25px solid;
 	margin: 0 1.6em 1.2em 0;
+}
+
+.zitat {
+	font-size: 20px;
+	line-height: 135%;
 }
 
 .text2 {
